@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="major" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3DX-NM-Ffg" userLabel="label">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xI-Tu-ZvX" userLabel="label_x">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G44-AV-JUs" userLabel="label_y">
+                                        <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbd-dm-U8t" userLabel="label_z">
+                                        <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wbd-dm-U8t" firstAttribute="height" secondItem="9xI-Tu-ZvX" secondAttribute="height" id="9oa-vt-301"/>
+                                    <constraint firstItem="wbd-dm-U8t" firstAttribute="width" secondItem="9xI-Tu-ZvX" secondAttribute="width" id="TuY-Lr-A1q"/>
+                                    <constraint firstItem="G44-AV-JUs" firstAttribute="height" secondItem="9xI-Tu-ZvX" secondAttribute="height" id="UEF-N6-A7B"/>
+                                    <constraint firstItem="G44-AV-JUs" firstAttribute="width" secondItem="9xI-Tu-ZvX" secondAttribute="width" id="yXN-7H-UEW"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rtJ-wb-HqE" userLabel="speed">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfF-wi-atb" userLabel="speed_x">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tjg-WT-3Ti" userLabel="speed_y">
+                                        <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYx-1f-IMv" userLabel="speed_z">
+                                        <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tjg-WT-3Ti" firstAttribute="width" secondItem="sfF-wi-atb" secondAttribute="width" id="EHW-Re-29o"/>
+                                    <constraint firstItem="OYx-1f-IMv" firstAttribute="height" secondItem="sfF-wi-atb" secondAttribute="height" id="L8c-az-iJn"/>
+                                    <constraint firstItem="Tjg-WT-3Ti" firstAttribute="height" secondItem="sfF-wi-atb" secondAttribute="height" id="nNi-PB-XaZ"/>
+                                    <constraint firstItem="OYx-1f-IMv" firstAttribute="width" secondItem="sfF-wi-atb" secondAttribute="width" id="pnv-j7-DS8"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XyM-vt-Pen" userLabel="accel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTU-RM-T08" userLabel="accel_x">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhs-D3-gCD" userLabel="accel_y">
+                                        <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xq-EU-neb" userLabel="accel_z">
+                                        <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zhs-D3-gCD" firstAttribute="height" secondItem="OTU-RM-T08" secondAttribute="height" id="5Vr-bW-l6U"/>
+                                    <constraint firstItem="3Xq-EU-neb" firstAttribute="width" secondItem="OTU-RM-T08" secondAttribute="width" id="HFS-uD-7cV"/>
+                                    <constraint firstItem="zhs-D3-gCD" firstAttribute="width" secondItem="OTU-RM-T08" secondAttribute="width" id="ZgP-NA-SgR"/>
+                                    <constraint firstItem="3Xq-EU-neb" firstAttribute="height" secondItem="OTU-RM-T08" secondAttribute="height" id="cFg-LP-6zr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3DX-NM-Ffg" secondAttribute="trailing" id="3r9-eh-uT8"/>
+                            <constraint firstItem="XyM-vt-Pen" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Ge-T9-jyh"/>
+                            <constraint firstAttribute="trailing" secondItem="XyM-vt-Pen" secondAttribute="trailing" id="FND-9v-KqW"/>
+                            <constraint firstItem="3DX-NM-Ffg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kc5-eP-nL8"/>
+                            <constraint firstAttribute="trailing" secondItem="rtJ-wb-HqE" secondAttribute="trailing" id="Knh-aH-cKA"/>
+                            <constraint firstItem="XyM-vt-Pen" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V1t-z5-CAx"/>
+                            <constraint firstItem="rtJ-wb-HqE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WG5-yx-oGJ"/>
+                            <constraint firstItem="rtJ-wb-HqE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aZx-YP-dhz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XyM-vt-Pen" secondAttribute="bottom" id="bhh-65-NXZ"/>
+                            <constraint firstItem="3DX-NM-Ffg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hbS-nX-wIU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rtJ-wb-HqE" secondAttribute="bottom" id="lel-9x-o1w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3DX-NM-Ffg" secondAttribute="bottom" id="swx-dw-pMh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accel_x" destination="OTU-RM-T08" id="uky-xE-X0N"/>
+                        <outlet property="accel_y" destination="zhs-D3-gCD" id="h6x-FL-rCt"/>
+                        <outlet property="accel_z" destination="3Xq-EU-neb" id="N7y-bJ-kzl"/>
+                        <outlet property="speed_x" destination="sfF-wi-atb" id="s8A-PP-fnC"/>
+                        <outlet property="speed_y" destination="Tjg-WT-3Ti" id="Md2-Ur-ahs"/>
+                        <outlet property="speed_z" destination="OYx-1f-IMv" id="Q0E-Uv-4al"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>

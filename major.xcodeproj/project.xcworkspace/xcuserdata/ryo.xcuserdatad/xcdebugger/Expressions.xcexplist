@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.(viewDidLoad() -&gt; ()).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.scView_x.contentSize.width - self.scView_x.frame.width + self.scView_x.contentInset.right">
+            </PersistentString>
+            <PersistentString
+               value = "Graph.graphPoints">
+            </PersistentString>
+            <PersistentString
+               value = "Graph.graphDatas">
+            </PersistentString>
+            <PersistentString
+               value = "-self.scView_x.contentInset.left">
+            </PersistentString>
+            <PersistentString
+               value = "point.truncatingRemainder(dividingBy: point * 10)">
+            </PersistentString>
+            <PersistentString
+               value = "speed_sum_x">
+            </PersistentString>
+            <PersistentString
+               value = "point.description">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Graph.draw(CGRect) -&gt; ():Graph.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Graph.graphDatas.count - DISPLAYPOINTLIMIT">
+            </PersistentString>
+            <PersistentString
+               value = "Graph.graphDatas.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(SamplingStart_TouchDown(Any) -&gt; ()).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Graph.graphPoints">
+            </PersistentString>
+            <PersistentString
+               value = "self.DISPLAYPOINTLIMIT">
+            </PersistentString>
+            <PersistentString
+               value = "Graph.graphPoints.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Graph.yAxisMax.getter:Graph.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Graph.graphDatas2.max()">
+            </PersistentString>
+            <PersistentString
+               value = "Graph.graphDatas2.min()">
+            </PersistentString>
+            <PersistentString
+               value = "Graph.graphDatas2.min">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
